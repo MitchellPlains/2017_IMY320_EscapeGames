@@ -1,2 +1,10 @@
 Changes
 
+The following changes were made from our proposal to our protoype:
+				We decided to change the backgrounds from solid colour to images related to our game, so that the users can clearly see that it is         a website made for a game.
+				
+        The navbar layout changed from being "Platforms" to a regular navigation bar.
+				
+				We changed our approach from mobile first to desktop, since our users will be playing the game from a desktop.
+        
+        
