@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+		<link href="css/style.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+		<!-- not needed anymore<script src="js/scroll.js"></script> -->
+	</head>
+	<body>
+		<!--For the background image -->
+		<div class="horizon scroll">
+			<!--<img src="images/horizon.png" alt="" />-->
+		</div>
+		<div id="header">
+			<div id="navbar">
+				<ul>
+					<li>
+						<a href="index1.html">Home</a>
+					</li>
+					<li>
+						<a href="index1.html">Levels</a>
+					</li>
+					<li>
+						<a href="index1.html">The Devs</a>
+					</li>
+					<li>
+						<a href="index1.html">Reviews + Download</a>
+					</li>
+				</ul>
+			</div>
+			<!--Navigation Character Pic changes HERE-->
+		</div>
+		<div class="front scroll">
+			<div id="Home" class="home page">
+				<div id="headerHome">					
+					<h1>Pirate boi</h1>
+				</div>
+				<div id="teaserVideo">
+					Teaser Video
+				</div>
+				
+				<div id="introText">
+					<p>
+						Pirate Boi is a game where the player needs to help Gibbs navigate and 
+						fight his way through treacherous terrian and enemies, back to his ship
+						which has been overrun by Skeleton Pirates.
+						<br /><br />
+						Can you help Gibbs get back to his ship?
+					</p>
+				</div>
+			</div>
+			<div id="Levels" class="levels page">
+				<div id="headerLevels">
+					
+					<h1>Levels</h1>
+				</div>
+				
+				<div id="lvlScreenshots">
+					<div id="lvl1SH">
+						Screenshot From Level 1
+					</div>
+					<div id="lvl2SH">
+						Screenshot From Level 2
+					</div>
+					<div id="lvl3SH">
+						Screenshot From Level 3
+					</div>
+				</div>
+				<div id="textForLevel">
+				Text for each Level, explaining the level and progress in the game.
+				</div>
+			</div>
+			<div id="TheDevelopers" class=" devs page" >
+					<div id="headerDevs">						
+						<h1>The Developers</h1>
+					</div>					
+					<div id="VB">
+						Vanblerk Havenga
+						<br/>
+						(Aesthetics + Code)
+					</div>
+					<div id="NE">
+						Nina Erasmus
+						<br/>
+						(Code + More Code)
+					</div>
+					<div id="ND">
+						Nicholas Devonport
+						<br/>
+						(Sound + Code)
+					</div>
+			</div><!--End developers div-->
+		</div><!--End Frontscroll div-->
+		<!--Code for sidescroll-->
+		    <script type="text/javascript">
+			(function($) {
+				$.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+				{
+					height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+					onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+					console.log(percent);
+				}
+				});
+			}(jQuery));
+		</script>
+	</body>
+</html>
