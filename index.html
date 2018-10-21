@@ -8,6 +8,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+		<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 
 		<!-- not needed anymore<script src="js/scroll.js"></script> -->
 	</head>
@@ -107,8 +109,18 @@
 			</div><!--End developers div-->
 			<div class="reviews page" id="Downloads">
                 <div id="headerDevs">                        
-                    <h1>Reviews and Downloads</h1>
-                </div> 
+					<h1>Gallery and Download</h1>
+				</div> 
+				<div class = "gallery">
+					<a href="images/1.png" data-lightbox="myGallery"><img src="images/1.png"></a>
+					<a href="images/2.png" data-lightbox="myGallery"><img src="images/2.png"></a>
+					<a href="images/3.png" data-lightbox="myGallery"><img src="images/3.png"></a>
+					<a href="images/4.png" data-lightbox="myGallery"><img src="images/4.png"></a>
+					<a href="images/5.png" data-lightbox="myGallery"><img src="images/5.png"></a>
+					<a href="images/6.png" data-lightbox="myGallery"><img src="images/6.png"></a>
+					<a href="images/7.png" data-lightbox="myGallery"><img src="images/7.png"></a>
+					<a href="images/8.png" data-lightbox="myGallery"><img src="images/8.png"></a>
+				</div>
 
             </div>
 		</div><!--End Frontscroll div-->
@@ -132,8 +144,8 @@
             $(function() {
                 $('ul.nav a').bind('click',function(event){
                     var $anchor = $(this);
-                    console.log("fuck");
-                    /*
+                    /*console.log("fuck");
+                    
                     if you want to use one of the easing effects:
                     $('html, body').stop().animate({
                         scrollLeft: $($anchor.attr('href')).offset().left
